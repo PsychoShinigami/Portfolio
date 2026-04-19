@@ -1,9 +1,20 @@
-body{
+body {
     background-color: black;
-    background-image:
-    linear-gradient(to right, rgba(255, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 0, 0, 0.05) 1px, transparent 1px);
-    background-size: 50px 50px;
+    /* Adding your new image link here */
+    background-image: 
+        linear-gradient(to right, rgba(255, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 0, 0, 0.05) 1px, transparent 1px),
+        url('https://png.pngtree.com/thumb_back/fh260/background/20231227/pngtree-red-metallic-overlay-on-black-abstract-background-texture-image_13898027.png');
+    
+    background-size: cover;
+    background-attachment: fixed;      
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 h1{
@@ -11,5 +22,5 @@ h1{
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0 0 10px #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px red;
 }
