@@ -10,25 +10,89 @@ body {
     background-attachment: fixed;
 }
 
-.menu{
-    background-color: rgba(17, 15, 15, 0.7);
-    backdrop-filter: blur(6px);
+.site-header {
+    padding: 20px 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Got the idea of this exact line by AI*/
 }
 
-.menu button{
-    background-color:rgba(244, 0, 0, 0.4);
-    color: white;
-    font-family: inherit;
-    border: gray solid 2px;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-left: 20px;
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ff0000;
+    border-radius: 50%;  
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.brand-text{
+    display:flex;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Got the idea of this exact line by AI*/
+    font-weight: 900;
+    line-height: 1;   
+    letter-spacing: 1px
+}
+
+.brand-text span {
+    color: #ff4d4d;  
+    font-size: 20px;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 
+                 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffffd4;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace; /* Got the idea of this exact line by AI*/
+    font-size: 18px;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-.menu button:hover{
-    background-color: rgb(255, 0, 0);
-    border: white solid 2px;
+.nav-links a:hover, .nav-links a.active {
+    color: #ff4d4d;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 
+                 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.about-container {
+    padding: 40px 240px;
+}
+
+.about-card {
+    background: rgba(10, 10, 10, 0.4);
+    border: 2px solid #ff4d4d;
+    text-align: left;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5), 
+        inset 0 0 15px rgba(255, 0, 0, 0.5);
+    display: inline-block;
+    min-width: 820px;
+}
+
+.about-title{
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin:0;
+}
+
+.about-title span {
+    color: #ff4d4d;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
