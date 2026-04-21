@@ -3,7 +3,7 @@ body {
     min-height: 100vh;
     background-color: black;
     background-image: 
-        radial-gradient(circle at center, rgba(139, 0, 0, 0.25) 0%, transparent 80%),
+        radial-gradient(circle at center, rgba(139, 0, 0, 0.25) 0%, transparent 80%), /* Got the idea of this exact line by AI */
         linear-gradient(rgba(255, 0, 0, 0.2) 1.3px, transparent  1.3px),
         linear-gradient(90deg, rgba(255, 0, 0, 0.2) 1.3px, transparent 1.3px);
     background-size: 100% 100%, 57px 57px, 57px 57px;
@@ -96,3 +96,13 @@ body {
     color: #ff4d4d;
     text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
+
+.about content{
+    min-width: 450px;
+}
+
+.reaper-img{
+    height: 450px;
+    width: auto;
+    filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.8));
+} 
