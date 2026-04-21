@@ -69,24 +69,30 @@ body {
 
 .about-container {
     padding: 40px 240px;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: rgba(10, 10, 10, 0.4);
     border: 2px solid #ff4d4d;
-    text-align: left;
     border-radius: 15px;
     padding: 50px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5), 
         inset 0 0 15px rgba(255, 0, 0, 0.5);
-    display: inline-block;
+    max-width: 1100px;
     min-width: 820px;
+    margin: 0 auto;
 }
 
 .about-title{
     color: white;
-    font-size: 55px;
-    font-weight: 800;
+    font-size: 50px;
+    font-weight: 750;
     text-transform: uppercase;
     line-height: 1.1;
     margin:0;
@@ -97,12 +103,36 @@ body {
     text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
 
-.about content{
+.about-text{
+    flex: 1;
+    text-align: left;
     min-width: 450px;
+}
+
+.about-image{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .reaper-img{
     height: 450px;
     width: auto;
-    filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.8));
+    filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.8))
+            drop-shadow(0 0 30px rgba(255, 0, 0, 0.3));
+    transform: translateY(-20px);
+    transition: transform 0.5s ease;
 } 
+
+.reaper-img:hover {
+    transform: rotate(0deg) scale(1.05);
+    filter: drop-shadow(0 0 25px rgba(255, 0, 0, 0.9));
+}
+
+.about-description {
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-size: 20px;
+    margin-top: 15px;
+    max-width: 500px; 
+}
