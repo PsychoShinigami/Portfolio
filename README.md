@@ -5,11 +5,20 @@ Portfolio theme:
  -Grid background.
  -Glowing red combine with grayish black theme.
  -Shinigami or Reaper style text.
- -Sections of About, Stats, Projects, Contact
 
-Tech Stack:
- -HTML
- -CSS
+Goal:
+-The goal of this portfolio was to create a high-performance, visually aggressive environment. The "Shinigami Realm" theme was chosen to represent a sharp, focused     approach to programming, utilizing a minimalist but high-impact color palette.
+
+Interface: A tactical HUD-style layout including sections for:
+About: My background in logic and programming.
+Stats: Technical proficiency.
+Projects: Repositories and live demonstrations of my work.
+Contact: Direct communication protocols via Gmail and Slack.
+
+Technical Stack:
+Structure: HTML
+Styling: CSS (Custom grid systems and keyframe animations for the glowing effects)
+Hosting: Custom domain integration at reaperly.com
  
 How to see:
  -click demo or go to reaperly.com
