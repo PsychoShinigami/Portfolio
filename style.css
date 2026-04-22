@@ -159,7 +159,9 @@ body {
     text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 
                  0 0 15px rgba(255, 0, 0, 0.4);
     text-align: center;
-
+    margin-bottom: 60px;
+    letter-spacing: 4px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .stats-card{
@@ -313,4 +315,41 @@ body {
 .examine-btn:hover {
     color: white;
     text-shadow: 0 0 10px #ff4d4d;
+}
+
+.contact-container{
+    padding: 60px 240px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title{
+    color: #ff4d4d;  
+    font-size: 37px;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 
+                 0 0 15px rgba(255, 0, 0, 0.4);
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-card{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.contact1-icon, .contact2-icon, .contact3-icon{
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0 0 25px rgba(255, 0, 0, 0.8));
+    transition: 0.3s
+}
+
+.contact1-icon:hover, .contact2-icon:hover, .contact3-icon:hover {
+    filter: drop-shadow(0 0 40px rgba(255, 0, 0, 0.9));
+    transform: scale(1.1);
+    cursor: pointer;
 }
