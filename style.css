@@ -239,3 +239,78 @@ body {
 .python{
     margin-top: 510px;
 }
+
+.projects-container {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.projects-title{
+    color: #ff4d4d;  
+    font-size: 37px;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 
+                 0 0 15px rgba(255, 0, 0, 0.4);
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 4px;
+    font-family: 'Courier New', Courier, monospace; /* Got the idea of this exact line by AI*/
+}
+
+.project-grid { /* Got the concept that how to make a grid layout by AI */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: radial-gradient(circle at center, rgba(60, 0, 0, 0.9) 0%, rgba(10, 10, 10, 0.95) 100%);
+    border: 1px solid rgba(157, 151, 151, 0.3);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: left;
+    transition: 0.4s
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #ff4d4d;
+    box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2);
+}
+
+.proj-title {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.tag {
+    font-size: 11px;
+    font-weight: bold;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background: rgba(255, 0, 0, 0.05);
+}
+
+.examine-btn {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.examine-btn:hover {
+    color: white;
+    text-shadow: 0 0 10px #ff4d4d;
+}
