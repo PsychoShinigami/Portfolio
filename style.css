@@ -77,7 +77,7 @@ body {
 }
 
 .about-container {
-    padding: 40px 240px;
+    padding: 60px 240px;
     min-height: 80vh;
     justify-content: center;
     align-items: center;
@@ -144,4 +144,98 @@ body {
     font-size: 20px;
     margin-top: 15px;
     max-width: 500px; 
+}
+
+.stats-container {
+    padding: 40px 240px;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-title{
+    color: #ff4d4d;  
+    font-size: 37px;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 
+                 0 0 15px rgba(255, 0, 0, 0.4);
+    text-align: center;
+
+}
+
+.stats-card{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(10, 10, 10, 0.4);
+    max-width: 1100px;
+    min-width: 820px;
+    margin: 0 auto;
+}
+
+.stats-description{
+    flex: 0.8;
+    text-align: left;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.html-stats{
+    text-align: center;
+    border: 1.5px solid #ff4d4d;
+    border-radius: 10px;
+    background: rgb(67, 55, 55, 0.7);
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.8) 0px, rgba(255, 0, 0, 0.5) 120px, rgba(255, 0, 0, 0.2) 130px, transparent 132px);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    height:500px;
+    width:80px
+}
+
+.html{
+    margin-top: 510px;
+}
+
+.css-stats{
+    text-align: center;
+    border: 1.5px solid #ff4d4d;
+    border-radius: 10px;
+    background: rgb(67, 55, 55, 0.7);
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.8) 0px, rgba(255, 0, 0, 0.5) 170px, rgba(255, 0, 0, 0.2) 180px, transparent 182px);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    height:500px;
+    width:80px
+}
+
+.css{
+    margin-top: 510px;
+}
+
+.java-stats{
+    text-align: center;
+    border: 1.5px solid #ff4d4d;
+    border-radius: 10px;
+    background: rgb(67, 55, 55, 0.7);
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.8) 0px, rgba(255, 0, 0, 0.5) 70px, rgba(255, 0, 0, 0.2) 80px, transparent 82px);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    height:500px;
+    width:80px
+}
+
+.java{
+    margin-top: 510px;
+}
+
+.python-stats{
+    text-align: center;
+    border: 1.5px solid #ff4d4d;
+    border-radius: 10px;
+    background: rgb(67, 55, 55, 0.7);
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.8) 0px, rgba(255, 0, 0, 0.5) 140px, rgba(255, 0, 0, 0.2) 150px, transparent 152px);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    height:500px;
+    width:80px;
+}
+
+.python{
+    margin-top: 510px;
 }
