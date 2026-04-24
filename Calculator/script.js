@@ -1,17 +1,21 @@
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('button');
+
 buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-        const value = btn.innerText;
 
+        const value = btn.innerText;
         if (value === '=') {
-            // Do math
-            display.innerText = eval(display.innerText);
+            try {
+                display.innerText = eval(display.innerText);
+            } catch (e) {
+                display.innerText = "Error";
+            }
         } else if (value === 'AC') {
-            // Clear everything
             display.innerText = "";
+        } else if (value === 'C') {
+            display.innerText = display.innerText.slice(0, -1);
         } else {
-            // Just add the number/symbol to the screen
             display.innerText += value;
         }
     });
