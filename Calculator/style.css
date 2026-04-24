@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: 
+        linear-gradient(rgba(245, 94, 94, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245, 94, 94, 0.2) 1px, transparent 1px);
+    background-size: 67px 67px; 
+    background-attachment: fixed;
+}
+
+.cal-container {
+    width: 400px;
+    height: 450px;
+    background-color: #201c1cc8;
+    background-image: linear-gradient(315deg , #201c1cc8 0%, #600d0da8 74%);
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.cal-display{
+    width: 350px;
+    height: 100px;
+    background-color: #130e0edf;
+    border: 2px solid #600d0d;
+    border-radius: 12px;
+    box-shadow: inset 0 0 15px rgba(240, 7, 7, 0.5);
+}
+
+.cal-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 350px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.num-btn, .opr-btn{
+    background-color:#121212;
+    color:#c74242;
+    border-top: 1px solid #333;
+    border-left: 1px solid #222;
+    border-right: 1px solid #111;
+    border-bottom: 5px solid #000;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 
+        inset 0 2px 3px rgba(255, 255, 255, 0.1), /* Top edge light */
+        0 5px 10px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s, box-shadow 0.2s;
+}
+
+.num-btn:hover, .opr-btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 2px 4px 14px rgba(187, 28, 28, 0.7);
+}
+
+.num-btn:active, .opr-btn:active{
+    transform: scale(0.95);
+    box-shadow: inset 0 0 10px rgba(187, 28, 28, 0.7);
+}
+
+.unique-btn{
+    background-color: #130101dc;
+    color: #c74242;
+    border-top: 1px solid #333;
+    border-left: 1px solid #222;
+    border-right: 1px solid #111;
+    border-bottom: 5px solid #000;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 
+        inset 0 2px 3px rgba(131, 50, 50, 0.1), /* Top edge light */
+        0 5px 10px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s, box-shadow 0.2s;
+}
+
+.unique-btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 3px 5px 13px rgba(187, 28, 28, 0.7),
+                3px 5px 27px rgba(187, 28, 28, 0.7);
+}
+
+.unique-btn:active{
+    transform: scale(0.95);
+    box-shadow: inset 0 0 10px rgba(187, 28, 28, 0.7);
+}
