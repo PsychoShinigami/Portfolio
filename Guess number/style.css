@@ -1,0 +1,166 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(240, 57, 57, 0.2) 2px, transparent 2px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.2) 2px, transparent 2px);
+    background-size: 57px 57px;                      
+}
+
+.container{
+    background: radial-gradient(circle at center, rgba(65, 71, 53, 0.7) 0%, rgba(10, 10, 10, 0.95) 100%);
+    border-radius: 20px;
+    border: 2px solid red;
+    width: 600px;
+    height: 700px;
+}
+
+.title{
+    font-size: 40px;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.697);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(181, 38, 64) ;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.inner-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.lives-total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(133, 25, 25);
+    width:270px;
+    word-wrap: break-word;
+    gap: 7px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.lives-text{
+    color: rgb(198, 28, 28);
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lives-number{
+    color: rgb(203, 17, 17);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hearts{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0px 0px 15px red);
+}
+
+.guidance{
+    
+    text-align: center;
+    border: 2px solid rgb(120, 16, 16);
+    margin-top: 15px;
+    margin-right: 25px;
+}
+
+.guidance-text{
+    color: rgb(215, 32, 32);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.ball-img{
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 0px 15px red);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.hint-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    border: 2px solid rgb(120, 16, 16);
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.input{
+    color:rgb(198, 31, 31);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.input-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:5px;
+    border: 2px solid rgb(120, 16, 16);
+    margin-bottom: 20px;
+}
+
+.sub-input{
+    color: rgb(198, 31, 31);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.guess-input{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.submit-btn{
+    width: auto;
+    margin-right: 25px;
+    margin-top: 70px;
+    height: 100px;
+    background-color: rgb(18, 17, 17);
+    color: rgb(199, 27, 27);
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
