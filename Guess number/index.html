@@ -8,14 +8,14 @@
                 <div class="lives-total">
                     <h1 class="lives-text">Lives</h1>
                     <div class="lives">
-                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts">
-                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts">
-                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts">
-                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts">
-                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts">
+                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts" id="lives-img1">
+                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts" id="lives-img2">
+                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts" id="lives-img3">
+                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts" id="lives-img4">
+                        <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="heart" class="hearts" id="lives-img5">
                     </div>
                     <div class="lives-info">
-                        <h1 class="lives-number">5</h1>
+                        <h1 class="lives-number" id="lives-num">5</h1>
                     </div>
                 </div>
                 <div class="guidance">
@@ -30,13 +30,16 @@
                     <h2 class="input">Enter your guess:</h2>
                     <div class="input-text">
                         <h3 class="sub-input">Numbers Only</h3>
-                        <input type="text" id="guess-input" class="guess-input">
+                        <input id="guess-input" class="guess-input">
                     </div>
                 </div>
-                <button class="submit-btn" id="submit-btn">Guess Soul</button>
+                <div class="submit-container">
+                    <button class="submit-btn" id="submit-btn">Guess Soul</button>
                 </div>
             </div>
-
+            <div class="reset-button">
+               <button class="reset-btn" id="reset-btn">AC: forget your death</button>
+            </div>  
         </div>
         <script src="script.js"></script>
     </body>

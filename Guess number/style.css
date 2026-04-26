@@ -4,23 +4,25 @@ body{
     align-items: center;
     height: 100vh;
     background-color: black;
-    background-image: linear-gradient(rgba(240, 57, 57, 0.2) 2px, transparent 2px),
+    background-image: linear-gradient(rgba(240, 57, 57, 0.3) 2px, transparent 2px),
                       linear-gradient(90deg, rgba(255, 255, 255, 0.2) 2px, transparent 2px);
     background-size: 57px 57px;                      
 }
 
 .container{
+    margin-top: 90px;
     background: radial-gradient(circle at center, rgba(65, 71, 53, 0.7) 0%, rgba(10, 10, 10, 0.95) 100%);
     border-radius: 20px;
-    border: 2px solid red;
-    width: 600px;
-    height: 700px;
+    border: 2px solid rgb(96, 31, 31);
+    width: 700px;
+    height: 800px;
 }
 
 .title{
     font-size: 40px;
     text-align: center;
-    color: rgba(255, 0, 0, 0.697);
+    color: #ff6666; 
+    font-family: 'Serif', Georgia, serif;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -44,23 +46,27 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(33, 31, 31);
     border: 2px solid rgb(133, 25, 25);
     width:270px;
     word-wrap: break-word;
     gap: 7px;
     margin-top: 15px;
     margin-left: 25px;
+    border-radius: 12px;
 }
 
 .lives-text{
-    color: rgb(198, 28, 28);
+    color: #ff6666; 
+    font-family: 'Serif', Georgia, serif;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .lives-number{
-    color: rgb(203, 17, 17);
+    color: #ff6666; 
+    font-family: 'Serif', Georgia, serif;
     font-size: 40px;
     font-weight: bold;
 }
@@ -69,19 +75,21 @@ body{
     margin-top: 10px;
     width: 40px;
     height: 40px;
-    filter: drop-shadow(0px 0px 15px red);
+    filter: drop-shadow(0px 0px 15px rgb(128, 18, 18));
 }
 
 .guidance{
-    
+    background-color: rgb(44, 6, 6);
     text-align: center;
-    border: 2px solid rgb(120, 16, 16);
+    border: 2px solid rgb(133, 25, 25);
     margin-top: 15px;
     margin-right: 25px;
+    border-radius: 12px;
 }
 
 .guidance-text{
-    color: rgb(215, 32, 32);
+    color: #ff6666; 
+    font-family: 'Serif', Georgia, serif;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -99,14 +107,24 @@ body{
 }
 
 .hint-container{
+    background-color: rgb(33, 31, 31);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
     padding: 20px;
-    border: 2px solid rgb(120, 16, 16);
+    border: 2px solid rgb(133, 25, 25);
+    border-radius: 12px;
+}
+
+.hint{
+    color: #ff6666; 
+    font-family: 'Serif', Georgia, serif;
+    font-size: 20px;
+    text-align: center;
 }
 
 .input-container{
@@ -116,10 +134,12 @@ body{
     align-items: center;
     margin-top: 15px;
     margin-left: 25px;
+    margin-right: 35px;
 }
 
 .input{
-    color:rgb(198, 31, 31);
+    color: #ff6666; 
+    font-family: 'Serif', Georgia, serif;
     text-transform: uppercase;
     font-size: 20px;
 }
@@ -129,13 +149,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(44, 6, 6);
     margin-top:5px;
     border: 2px solid rgb(120, 16, 16);
+    border-radius: 12px;
     margin-bottom: 20px;
 }
 
 .sub-input{
-    color: rgb(198, 31, 31);
+    color: #ff6666; 
+    font-family: 'Serif', Georgia, serif;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -145,21 +168,77 @@ body{
     height: 30px;
     font-size: 16px;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
-.submit-btn{
-    width: auto;
+.submit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
     margin-right: 25px;
-    margin-top: 70px;
-    height: 100px;
-    background-color: rgb(18, 17, 17);
-    color: rgb(199, 27, 27);
-    font-size: 26px;
+}
+
+.submit-btn{
+    background: #2b2b2b;
+    border-top: 3px solid #444;
+    border-left: 3px solid #444;
+    border-bottom: 4px solid #111;
+    border-right: 4px solid #111;
+    border-radius: 6px;
+    padding: 25px 50px;
+    position: relative;
+    box-shadow: 0 0 15px #ff0000, 5px 5px 15px rgba(0, 0, 0, 0.8);
+    color: #ff6666; 
+    font-size: 24px;
+    font-family: 'Serif', Georgia, serif;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 5px;
+    text-shadow: 2px 2px 2px #000;
     cursor: pointer;
-    transition: 0.3s
+}
+
+.submit-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 10px #ff0000;
+    border-bottom: 2px solid #111;
+}
+
+.reset-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.reset-btn{
+    background: #2b2b2b;
+    background-image: radial-gradient(circle at center, rgba(255, 0, 0, 0.63) 0%, rgba(52, 9, 9, 0.8) 100%);
+    border-top: 3px solid #444;
+    border-left: 3px solid #444;
+    border-bottom: 4px solid #111;
+    border-right: 4px solid #111;
+    border-radius: 6px;
+    padding: 25px 50px;
+    position: relative;
+    box-shadow: 0 0 15px #ff0000, 5px 5px 15px rgba(0, 0, 0, 0.8);
+    color: #ff6666; 
+    font-size: 24px;
+    font-family: 'Serif', Georgia, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #000;
+    cursor: pointer;
+}
+
+.reset-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 10px #ff0000;
+    border-bottom: 2px solid #111;
 }
