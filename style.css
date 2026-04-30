@@ -24,6 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /*Got the idea of this exact line by AI*/
+    backdrop-filter: blur(10px);
 }
 
 .logo-area {
