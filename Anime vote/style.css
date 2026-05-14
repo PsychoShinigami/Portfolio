@@ -1,0 +1,217 @@
+body{
+    background: rgba(0, 6, 50, 0.855);
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: rgb(230, 220, 183);
+    height: 25px
+}
+
+.input::placeholder {
+    color: #000000;
+    font-style: italic;
+    font-weight: 300;
+    opacity: 1; 
+}
+
+.vote-overlay{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.456);
+    z-index: 900;
+    backdrop-filter: blur(20px);
+}
+
+.vote-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://t4.ftcdn.net/jpg/01/16/88/37/360_F_116883786_wuckft1sNw1ouQfJ6FuquZnxea3qBlxy.jpg");
+    border-radius: 11px;
+    justify-content: center;
+    background-color: azure;
+    width:300px;
+    height:200px;
+    gap:20px
+}
+
+.reg-vote{
+    width:150px;
+    height: 40px;
+    background-color: rgba(12, 201, 12, 0.638);
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1.5px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reg-vote:active{
+    transform: scale(0.8);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.vote-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:10px;
+}
+
+.animes{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-top: 30px;
+}
+
+.image{
+    width:250px;
+}
+
+.image1{
+    width:250px;
+    mix-blend-mode: screen;
+}
+
+.one-piece, .naruto, .bleach{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(45, 42, 42, 0.622);
+    border-radius: 20px;
+}
+
+.one-piece{
+    border: 3px solid rgb(255, 251, 0);
+}
+
+.naruto{
+    border: 3px solid orange;
+}
+
+.bleach{
+    border: 3px solid aqua;
+}
+
+.name{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white
+}
+
+.desc{
+    font-size: 20px;
+    color:white;
+    margin-left:10px;
+    margin-right:10px
+}
+
+.button-1, .button-2, .button-3{
+    margin-bottom: 10px;
+    width:200px;
+    height:35px;
+    color: black;
+    font-weight: bold;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-1{
+    background-color: yellow;
+}
+
+.button-2{
+    background-color: orange;
+}
+
+.button-3{
+    background-color: aqua;
+}
+
+.button-1:active{
+    transform: scale(0.9);
+}
+
+.button-2:active{
+    transform: scale(0.9);
+}
+
+.button-3:active{
+    transform: scale(0.9);
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:200px;
+    background-color: rgba(45, 42, 42, 0.622);
+    margin-top: 30px;
+    margin-left:100px;
+    margin-right:100px;
+    border-radius: 15px;
+    border: 3px solid gray;
+    overflow: hidden;
+}
+
+.result-showcases{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:60px
+}
+
+.result-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.RESULT-h1{
+    color:white;
+    font-size: 50px;
+}
+
+.total-votes{
+    color:white;
+    font-size: 30px;
+}
+
+.result-showcase{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.anime-name1{
+    color:yellow;
+}
+
+.anime-name2{
+    color:orange;
+}
+
+.anime-name3{
+    color:aqua;
+}
