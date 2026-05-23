@@ -20,4 +20,6 @@ function calculate(btn) {
   });
 }
 
-buttons.forEach(calculate);
+buttons.forEach((button) => {
+  calculate(button);
+});
