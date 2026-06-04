@@ -1,0 +1,338 @@
+html, body{
+    background-color : rgb(3, 3, 20);
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: auto;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+::placeholder{
+    color : rgb(62, 131, 131);
+}
+
+.main-container{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    width : 100vw;
+    height : 100vh;
+}
+
+.header{
+    display : flex;
+    gap : 490px;
+    width : 95vw;
+    height : 9vh;
+}
+
+.logo{
+    display : flex;
+    align-items : center;
+    width : 20%;
+}
+
+.logo-text{
+    color : white;
+}
+
+.logo-text2{
+    color : aqua;
+}
+
+.logo-text, .logo-text2{
+    text-transform : uppercase;
+}
+
+.menu-boxes{
+    display : flex;  
+    gap : 30px;
+    width : 53%;
+}
+
+.menu-box{
+    display : flex;
+    align-items : center;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+.menu1, .menu2, .menu3, .menu4{
+    color : rgba(255, 255, 255, 0.749);
+    font-size : 20px;
+    cursor : pointer;
+    padding : 13px;
+    border-radius : 7px;
+    transition : color 0.5s ease, border-color 0.5s ease, background-color 0.5s ease;
+    border: 2px solid transparent;
+}
+
+.menu2{
+    color : rgba(10, 119, 119, 0.825);
+    border-color : rgba(10, 119, 119, 0.825);
+}
+
+.welcome{
+    display : flex;
+    width : 95vw;
+    height : 23vh;
+    border-radius : 13px;
+    border : 2px solid rgba(10, 119, 119, 0.825);
+    box-shadow: 0 0 7px 2px rgba(10, 119, 119, 0.825);
+    margin-top : 20px;
+    background-color: rgb(1, 16, 16);
+    background-image: radial-gradient(circle at top left, rgba(14, 165, 233, 0.15) 0%, transparent 65%);
+}
+
+.wel-txt{
+    display : flex;
+    flex-direction : column;
+    text-align : left;
+    justify-content : center;
+    width : 45%;
+    margin-left : 5%;
+}
+
+.wel-title{
+    color : rgb(81, 232, 219);
+    font-size : 40px;
+}
+
+.wel-desc{
+    color : rgba(255, 255, 255, 0.749);
+    font-size : 25px;
+}
+
+.wel-img2{
+    width : 40%;
+}
+
+.laptop-img{
+    width : 100%;
+    filter : drop-shadow(0 0 7px aqua);
+    margin-top : 8px;
+    margin-left : 90px;
+}
+
+.filter-box{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    width : 95vw;
+    height : 8vh;
+    border-radius : 10px;
+    margin-top : 20px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    width : 45%;
+    box-sizing: border-box;
+    height : 70%;
+    border-radius : 50px;
+    border : 2px solid rgba(10, 119, 119, 0.825);
+    color : white;
+    background-color : rgba(25, 61, 61, 0.695);
+    outline : none;
+    padding-right: 1%;
+}
+
+.search-bar {
+    flex: 1; 
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    color: rgb(62, 131, 131); 
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition : 0.5s ease-in-out;
+}
+
+.search-icon:hover{
+    transform : scale(1.2)
+}
+
+.filter-options{
+    display : flex;
+    align-items: center;
+    width : 50%;
+    height : 70%;
+}
+
+.filter-txt{
+    color : white;
+    font-size : 22px;
+    letter-spacing : 2px;
+}
+
+.f-btn{
+    width : 30%;
+    color : white;
+    font-size : 15px;
+    border-radius : 50px;
+    border : 2px solid rgba(10, 119, 119, 0.825);
+    margin-left : 3%;
+    background-color : rgba(25, 61, 61, 0.695);
+    height : 80%;
+    cursor : pointer;
+    transition : 0.5s;
+}
+
+.f-btn:hover{
+    transform : translatey(-5px)
+}
+
+.paths-box{
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+    width : 95vw;
+    justify-content : center;
+    align-items : center;
+    margin-top : 20px;
+    gap : 20px;
+}
+
+.path{
+    display : flex;
+    align-items : center;
+    width : 30vw;
+    height : 25vh;
+    border-radius : 13px;
+    border : 2px solid rgba(10, 119, 119, 0.825);
+    box-shadow: 0 0 7px 2px rgba(10, 119, 119, 0.825);
+}
+
+.lang-img{
+    background-color : rgb(3, 3, 20);
+    background-image : radial-gradient(circle at top, rgba(61, 101, 101, 0.66) 0%, transparent 80%);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    width : 40%;
+    height : 100%;
+}
+
+.py-img{
+    width : 65%;
+    height : 60%;
+}
+
+.web-img{
+    width : 100%;
+    height : 100%;
+}
+
+.lang-desc{
+    width : 60%;
+    height : 100%;
+    background-color: rgb(18, 36, 51);;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-direction : column;    
+    border-radius : 0 11px 11px 0;
+}
+
+.desc-title{
+    display : flex;
+    align-items : center;
+    width : 90%;
+    height : 22%;
+}
+
+.desc-name{
+    display : flex;
+    align-items : center;
+    width : 90%;
+    height : 22%;
+}
+
+.desc-bar{
+    display : flex;
+    align-items : center;
+    width : 90%;
+    height : 12%;
+}
+
+.bar-value{
+    display : flex;
+    align-items : center;
+    width : 90%;
+    height : 12%;
+}
+
+.explore-track{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    width : 90%;
+    height : 22%;
+}
+
+.core-track{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    color : rgba(10, 119, 119, 0.825);
+    font-size : 15px;
+    border : 1px solid rgba(10, 119, 119, 0.825);
+    border-radius : 50px;
+    padding : 7px;
+}
+
+.lang-name{
+    color : white;
+    font-size : 23px;
+}
+
+.progress-bar{
+    background-color: rgb(32, 50, 62);
+    width : 100%;
+    height : 40%;
+    border-radius : 50px;
+}
+
+.bar-data{
+    color : rgba(255, 255, 255, 0.749);
+    font-size : 15px;
+}
+
+.bar-data2{
+    color : rgba(255, 255, 255, 0.749);
+    font-size : 15px;
+    margin-left : 40%;
+}
+
+.explore-btn{
+    background : transparent;
+    color : rgba(10, 119, 119, 0.825);
+    font-size : 18px;
+    font-weight : bold;
+    border : 2px solid rgba(10, 119, 119, 0.825);
+    border-radius : 7px;
+    width : 100%;
+    height : 85%;
+    cursor : pointer;
+    transition :  0.5s;
+}
+
+.explore-btn:hover{
+    transform : translateX(5px);
+    box-shadow : 0 1px 3px 0 aqua;
+}

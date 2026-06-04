@@ -1,0 +1,157 @@
+html, body{
+    background-color : rgb(3, 3, 20);
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: auto;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    width : 100vw;
+    height : 100vh;
+}
+
+.header{
+    display : flex;
+    gap : 490px;
+    width : 95vw;
+    height : 9vh;
+}
+
+.logo{
+    display : flex;
+    align-items : center;
+    width : 20%;
+}
+
+.logo-text{
+    color : white;
+}
+
+.logo-text2{
+    color : aqua;
+}
+
+.logo-text, .logo-text2{
+    text-transform : uppercase;
+}
+
+.menu-boxes{
+    display : flex;  
+    gap : 30px;
+    width : 53%;
+}
+
+.menu-box{
+    display : flex;
+    align-items : center;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+.menu1, .menu2, .menu3, .menu4{
+    color : rgba(255, 255, 255, 0.749);
+    font-size : 20px;
+    cursor : pointer;
+    padding : 13px;
+    border-radius : 7px;
+    transition : color 0.5s ease, border-color 0.5s ease, background-color 0.5s ease;
+    border: 2px solid transparent;
+}
+
+.menu3{
+    color : rgba(10, 119, 119, 0.825);
+    border-color : rgba(10, 119, 119, 0.825);
+}
+
+.videos-title{
+    display : flex;
+    width : 95vw;
+    height : 23vh;
+    border-radius : 13px;
+    border : 2px solid rgba(10, 119, 119, 0.825);
+    box-shadow: 0 0 7px 2px rgba(10, 119, 119, 0.825);
+    margin-top : 20px;
+    background-color: rgb(1, 16, 16);
+    background-image: radial-gradient(circle at top left, rgba(14, 165, 233, 0.15) 0%, transparent 65%);
+}
+
+.wel-txt{
+    display : flex;
+    flex-direction : column;
+    text-align : left;
+    justify-content : center;
+    width : 45%;
+    margin-left : 5%;
+}
+
+.wel-title{
+    color : rgb(81, 232, 219);
+    font-size : 40px;
+}
+
+.wel-desc{
+    color : rgba(255, 255, 255, 0.749);
+    font-size : 25px;
+}
+
+.wel-img2{
+    width : 40%;
+}
+
+.laptop-img{
+    width : 100%;
+    filter : drop-shadow(0 0 7px aqua);
+    margin-top : 8px;
+    margin-left : 90px;
+}
+
+.videos-box{
+    display : flex;
+    flex-direction : column;
+    align-items : left;
+    justify-content : center;
+    width : 95vw;
+    height : auto;
+    margin-top : 40px;
+    gap : 20px;
+}
+
+.video{
+    display : flex;
+    width : 83vw;
+    height : 25vh;
+    border : 2px solid rgba(10, 119, 119, 0.825);
+    box-shadow: 0 0 5px 2px rgba(10, 119, 119, 0.825);
+    border-radius : 12px;
+}
+
+.thumbnail{
+    color : white;
+    font-size : 30px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    width : 40%;
+    height : 100%;
+    border : 2px solid rgba(10, 119, 119, 0.825);
+    border-radius : 12px;
+}
+
+.video-desc{
+    color : white;
+    font-size : 30px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    width : 60%;
+    height : 100%;
+}
