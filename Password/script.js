@@ -117,32 +117,19 @@ function generatePassword() {
     const lowercases = "abcdefghijklmnopqrstuvwxyz";
     const digits = "1234567890";
     const specialCharactersList = "!#$&_-/.><+=*()";
-    const checkboxes = document.querySelectorAll('.checkbox');
-    let checkedCount = 0;
-    checkboxes.forEach(box => {
-        if (box.checked) {
-            checkedCount++
-        };
-    });
+
+    let characterPool = "";
+    if (uppercase.checked) characterPool += uppercases;
+    if (lowercase.checked) characterPool += lowercases;
+    if (numbers.checked) characterPool += digits;
+    if (specialCharacters.checked) characterPool += specialCharactersList;
 
     let password = "";
-    for (let i=1; i <= length/checkedCount; i++) {
-        let choice = Math.floor(Math.random()*26);
-        let numChoice = Math.floor(Math.random()*10);
-        let SPchoice = Math.floor(Math.random()*15);
-        if (uppercase.checked) {
-            password += uppercases[choice]
-        }
-        if (lowercase.checked) {
-            password += lowercases[choice];
-        }
-        if (numbers.checked) {
-            password += digits[numChoice];
-        }
-        if (specialCharacters.checked) {
-            password += specialCharactersList[SPchoice];
-        }
+    for (let i = 0; i < length; i++) {
+        let randomIndex = Math.floor(Math.random() * characterPool.length);
+        password += characterPool[randomIndex];
     }
+
     document.querySelector('.password').innerText = password;
     const container = document.querySelector('.histories-box');
     const existingDivs = container.querySelectorAll('.savedPassword');
