@@ -1,0 +1,319 @@
+body{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow : hidden;
+    background-color : black;
+}
+
+.main-container{
+    display : flex;
+    width : 95vw;
+    height : 95vh;
+    gap : 3%;
+}
+
+.panel1{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    width : 77%;
+    height : 95vh;
+}
+
+.panel2{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    width : 20%;
+    height : 95vh;
+    gap : 5%;
+}
+
+.logo-box{
+    display : flex;
+    flex-direction : left;
+    width : 100%;
+    height : 40%;
+}
+
+.logo{
+    margin-top : 10px;
+}
+
+.generator-box{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    width : 100%;
+    height : 60%;
+    border : 1.5px solid rgb(30, 100, 100);
+    border-radius : 11px;
+}
+
+.generate-txt{
+    color : rgb(198, 198, 198);
+    font-size : 1.7cqw;
+    height : 10%;
+    margin-left : 3.6%;
+}
+
+.password-box{
+    display : flex;
+    align-items : center;
+    width : 93%;
+    height : 15%;
+    border : 1px solid aqua;
+    background-color : rgba(16, 91, 91, 0.536);
+    border-radius : 6px;
+    margin-left : 3.5%;
+}
+
+.password{
+    display : flex;
+    align-items : center;
+    width : 89%;
+    font-size : 2.2cqw;
+    color : rgb(128, 175, 175);
+    margin-left : 1%;
+    margin-right : 0.5%;
+}
+
+.line{
+    width : 0.05%;
+    background-color : aqua;
+    border : 0.1px solid aqua;
+    height : 85%;
+}
+
+.change-box{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    width : 8%;
+    height : 95%;
+    margin-left : 0.5%;
+    margin-right : 1%;
+    cursor : pointer;
+}
+
+.change-icon{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 2cqw;
+    color : rgba(25, 161, 161, 0.748);
+    height : 65%;
+    width : 95%;
+    margin-bottom : 0px;
+    margin-top : 25%;
+}
+
+.change-txt{
+    margin-top : 0px;
+    height : 30%;
+    width : 95%;
+    color : rgba(25, 161, 161, 0.748);
+}
+
+.edit-box1, .edit-box2, .strength-box{
+    display : flex;
+    width : 93%;
+    height : 20%;
+    margin-left : 3.5%;
+}
+
+.length-box{
+    display : flex;
+    flex-direction : column;
+    width : 52%;
+}
+
+.copy-box{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    width : 21%;
+    height : 55%;
+    margin-left: auto;
+    border : 2px solid aqua;
+    border-radius : 12px;
+    margin-top : 2%;
+    cursor : pointer;
+    box-shadow:
+        0 0 15px rgba(0, 243, 255, 0.4),
+        0 0 5px rgba(0, 243, 255, 0.6),
+        inset 0 0 50px rgba(0, 243, 255, 0.3);
+}
+
+.copy-img{
+    width : 20%;
+    height : 70%;
+}
+
+.copy-txt{
+    font-size : 1.4cqw;
+    color : rgba(28, 180, 180, 0.967);;
+}
+
+.password-length{
+    margin-bottom : 2%;
+    color : white;
+    font-size : 1.2cqw;
+}
+
+.slider-value{
+    color : aqua;
+    font-size : 1.15cqw;
+}
+
+.slider{
+    margin-top : 0px;
+    width: 100%;
+    height: 8%;
+    border-radius: 4px;
+    cursor: pointer;
+    accent-color: aqua; 
+}
+
+.checkbox-area{
+    display : grid;
+    grid-template-columns : repeat(2, 1fr);
+    width : 60%;
+    height : 100%;
+}
+
+.checkbox-space{
+    width : 100%;
+    height : 40%;
+}
+
+.checkbox{
+    width : 6%;
+    height : 100%;
+    accent-color : rgb(38, 94, 94);
+    background-color : aqua;
+    border : 2px solid #00555a;
+    border-radius: 6px;
+    cursor: pointer;
+    vertical-align: middle;
+    
+}
+
+.checkbox-txt {
+    color : white;
+    font-family: sans-serif;
+    font-size: 1cqw;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.generate-box{  
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    width : 15%;
+    height : 55%;
+    margin-left: auto;
+    border : 2px solid aqua;
+    border-radius : 12px;
+    margin-top : 1.6%;
+    cursor : pointer;
+    box-shadow:
+        0 0 15px rgba(0, 243, 255, 0.4),
+        0 0 5px rgba(0, 243, 255, 0.6),
+        inset 0 0 50px rgba(0, 243, 255, 0.3);
+}
+
+.lock-img{
+    width : 25%;
+    height : 60%;
+} 
+
+
+.password-strength-txt{
+    margin-bottom : 1%;
+    margin-top : 0px;
+    color : white;
+    font-size : 1.2cqw;
+}
+
+.password-strength{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    width : 100%;
+    height : 100%;
+    
+}
+
+#pass-strength{
+    color : red;
+    font-size : 1.15cqw;
+}
+
+.strength-bar{
+    width : 44%;
+    height : 35%;
+    border : 1.5px solid rgb(30, 100, 100);
+    border-radius : 0 7px 7px 0;
+    margin-top : 0px;
+}
+
+.strength-meter{
+    background-color : rgba(0, 255, 255, 0.71);
+    width : 15%;
+    height : 100%;
+}
+
+.history-box, .saved-box{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : top;
+    width : 100%;
+    height : 48%;
+    border : 1.5px solid rgb(30, 100, 100);
+    border-radius : 8px;
+}
+
+.history-txt, .saved-txt{
+    display : flex;
+    justify-content : center;
+    width : 90%;
+    height : 7%;
+    font-size : 1.3cqw;
+    color : rgb(198, 198, 198);
+}
+
+.histories-box, .saves-box{
+    display : flex;
+    justify-content : top;
+    flex-direction : column;
+    align-items : center;
+    height : 78%;
+    width : 90%;
+}
+
+.savedPassword{
+    display : flex;
+    align-items : center;
+    width : 100%;
+    height : 14%;
+    margin-bottom : 3%;
+    padding : 2%;
+    border : 2px solid aqua;
+    border-radius : 13px;
+    box-shadow:
+        0 0 6px rgba(0, 243, 255, 0.4),
+        0 0 2px rgba(0, 243, 255, 0.6),
+        inset 0 0 20px rgba(0, 243, 255, 0.3);
+    color : rgb(128, 175, 175);
+    font-size : 1.2cqw;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}

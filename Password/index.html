@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="panel1">
+                <div class="logo-box">
+                    <img class="logo" alt="logo-img" src="/Password/images/Logo.png">
+                </div>
+                <div class="generator-box">
+                    <h1 class="generate-txt">GENERATE SECURE PASSWORD</h1>
+                    <div class="password-box">
+                        <div class="password"></div>
+                        <div class="line"></div>
+                        <div class="change-box">
+                            <h3 class="change-icon">↻</h3>
+                            <h3 class="change-txt">CHANGE</h3>
+                        </div>
+                    </div>
+                    <div class="edit-box1">
+                        <div class="length-box">
+                            <h4 class="password-length">Password Length: <span class="slider-value">10</span></h4>
+                            <input type="range" class="slider" min="0" max="44" value="10">
+                        </div>
+                        <div class="copy-box">
+                            <img src="/Password/images/copy-icon.png" class="copy-img">
+                            <h2 class="copy-txt">Copy Password</h2>
+                        </div>
+                    </div>
+                    <div class="edit-box2">
+                        <div class="checkbox-area">
+                            <div class="checkbox-space">
+                                <input class="checkbox" type="checkbox" id="upperCase">
+                                <span class="checkbox-txt">Include Uppercase</span>
+                            </div>
+                            <div class="checkbox-space">
+                                <input class="checkbox" type="checkbox" id="lowerCase">
+                                <span class="checkbox-txt">Include Lowercase</span>
+                            </div>
+                            <div class="checkbox-space">
+                                <input class="checkbox" type="checkbox" id="numbers">
+                                <span class="checkbox-txt">Include Numbers</span>
+                            </div>
+                            <div class="checkbox-space">
+                                <input class="checkbox" type="checkbox" id="specialCharacters">
+                                <span class="checkbox-txt">Include Special Characters</span>
+                            </div>
+                        </div>
+                        <div class="generate-box">
+                            <img src="/Password/images/lock-icon.png" class="lock-img">
+                            <h2 class="copy-txt">Generate</h2>
+                        </div>
+                    </div>
+                    <div class="strength-box">
+                        <div class="password-strength">
+                            <h4 class="password-strength-txt">Password Strength: <span id="pass-strength">You must check one box</span></h4>
+                            <div class="strength-bar">
+                                <div class="strength-meter"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel2">
+                <div class="history-box">
+                    <h2 class="history-txt">Recent History</h2>
+                    <div class="histories-box">
+                    </div>
+                </div>
+                <div class="saved-box">
+                    <h2 class="saved-txt">Saved passwords</h2>
+                    <div class="saves-box"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
